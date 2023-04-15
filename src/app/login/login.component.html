@@ -1,0 +1,33 @@
+<div>
+	<form [formGroup]="logInForm" (ngSubmit)="logIn()">
+		<label
+			>Username:
+			<input
+				type="text"
+				formControlName="username"
+				placeholder="Username"
+				[ngClass]="{
+					invalid:
+						logInForm.get('password')?.invalid &&
+						logInForm.get('password')?.dirty
+				}"
+			/>
+		</label>
+
+		<label
+			>Username:
+			<input
+				type="password"
+				formControlName="password"
+				placeholder="Password"
+				[ngClass]="{
+					invalid:
+						logInForm.get('password')?.invalid &&
+						logInForm.get('password')?.dirty
+				}"
+			/>
+		</label>
+
+		<button type="submit" [disabled]="logInForm.invalid">Log in</button>
+	</form>
+</div>

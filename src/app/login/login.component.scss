@@ -1,0 +1,26 @@
+div {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+
+	form {
+		display: flex;
+		flex-direction: row;
+
+		div {
+			display: flex;
+			flex-direction: column;
+
+			input {
+				margin: 0 1rem 1rem 0;
+			}
+		}
+
+		button {
+			max-width: fit-content;
+			border-radius: 4px;
+			background: rgba(6, 82, 222, 0.27);
+			border: 1px solid rgba(6, 82, 222, 0.27);
+		}
+	}
+}

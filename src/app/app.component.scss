@@ -1,0 +1,10 @@
+.welcome {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+
+	.welcome-title {
+		margin-bottom: 2rem;
+	}
+}
