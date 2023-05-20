@@ -6,7 +6,13 @@ div {
 	form {
 		display: flex;
 		flex-direction: row;
-
+		
+		.form-container {
+			padding: 1rem;
+			border-radius: 8px;
+			background-color: white;
+			box-shadow: 0 LL4px 8px 0 rgba(0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+		}
 		div {
 			display: flex;
 			flex-direction: column;
@@ -17,7 +23,7 @@ div {
 		}
 
 		button {
-			max-width: fit-content;
+			max-width: 100%;
 			border-radius: 4px;
 			background: rgba(6, 82, 222, 0.27);
 			border: 1px solid rgba(6, 82, 222, 0.27);

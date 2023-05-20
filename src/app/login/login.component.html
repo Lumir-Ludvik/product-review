@@ -1,6 +1,7 @@
 <div>
 	<form [formGroup]="logInForm" (ngSubmit)="logIn()">
-		<label
+		<div class="form-container">
+			<label
 			>Username:
 			<input
 				type="text"
@@ -27,7 +28,7 @@
 				}"
 			/>
 		</label>
-
 		<button type="submit" [disabled]="logInForm.invalid">Log in</button>
+		</div>
 	</form>
 </div>
